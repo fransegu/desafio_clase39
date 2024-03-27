@@ -1,0 +1,21 @@
+<header>
+    <h1>
+        USERS PREMIUM
+    </h1>
+</header>
+<h2> UPGRADE 
+</h2>
+<form id="changeRoleForm">
+        <label for="email">Email de Usuario:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="role">Nuevo Rol:</label>
+        <select id="role" name="role">
+            <option value="user">Usuario</option>
+            <option value="premium">Premium</option>
+        </select>
+        <input type="hidden" name="uid" id="uid" value="{{uid}}">
+
+        <button type="button" onclick="changeUserRole('{{uid}}')">Cambiar Rol</button>
+</form>
+<script src="/functions.js"></script>
